@@ -1,0 +1,11 @@
+# Hugo folders
+public/
+resources/
+.hugo_build.temp/
+
+# Binaries
+hugo.exe
+
+# OS generated files
+.DS_Store
+Thumbs.db
