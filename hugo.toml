@@ -687,7 +687,7 @@ orderby = "name" # Order of tags, optional values: ["name", "count"]
 
 # Home page profile
 [params.home.profile]
-enable = false
+enable = true
 # FixIt 0.4.0 | NEW Whether to show profile and content only in the first home page
 onlyFirstPage = false
 # Gravatar Email for preferred avatar in home page
@@ -697,15 +697,15 @@ avatarURL = ""
 # FixIt 0.2.17 | NEW identifier of avatar menu link
 avatarMenu = ""
 # title shown in home page (HTML format is supported)
-title = ""
+title = "stinLab"
 # subtitle shown in home page (HTML format is supported)
-subtitle = ""
+subtitle = "This site is dedicated to teaching non-technical users on all stuff technical."
 # whether to use typeit animation for subtitle
 typeit = true
 # whether to show social links
 social = true
 # disclaimer (HTML format is supported)
-disclaimer = ""
+disclaimer = "All guide are based on personal experience."
 
 # Home page posts
 [params.home.posts]
@@ -984,7 +984,7 @@ data_token = ""
 
 # Cookie consent config
 [params.cookieconsent]
-enable = true
+enable = false
 
 # text strings used for Cookie consent banner
 [params.cookieconsent.content]
