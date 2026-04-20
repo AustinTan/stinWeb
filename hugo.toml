@@ -1195,7 +1195,7 @@ expand_file_tree = false
 # Custom partials must be stored in the /layouts/_partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [params.customPartials]
-head = []
+head = ["custom-head.html"]
 menuDesktop = []
 menuMobile = []
 profile = []
@@ -1425,11 +1425,11 @@ position = [
 
 # FixIt 0.2.17 | NEW Donate (Sponsor) settings
 [params.page.reward]
-enable = false
-animation = false
+enable = true
+animation = true
 # position relative to post footer, optional values: ["before", "after"]
 position = "after"
-# comment = "Buy me a coffee"
+comment = "Buy me a coffee"
 # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
 mode = "static"
 
@@ -1469,7 +1469,7 @@ Mix = false
 
 # FixIt 0.2.15 | CHANGED Comment config
 [params.page.comment]
-enable = false
+enable = true
 
 # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
 [params.page.comment.artalk]
@@ -1614,12 +1614,12 @@ katex = false
 
 # FixIt 0.2.14 | NEW Giscus comments config
 [params.page.comment.giscus]
-enable = false
-repo = ""
-repoId = ""
-category = ""
-categoryId = ""
-mapping = ""
+enable = true
+repo = "AustinTan/stinlab"
+repoId = "R_kgDOSE3HDg"
+category = "General"
+categoryId = "DIC_kwDOSE3HDs4C7B80"
+mapping = "pathname"
 origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
 strict = "0" # FixIt NEW | 0.2.18
 term = ""
