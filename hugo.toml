@@ -1709,7 +1709,7 @@ katex = false
 # FixIt 0.2.14 | NEW Giscus comments config
 [params.page.comment.giscus]
 enable = true
-repo = "AustinTan/stinlab"
+repo = "AustinTan/stinWeb"
 repoId = "R_kgDOSE3HDg"
 category = "General"
 categoryId = "DIC_kwDOSE3HDs4C7B80"
@@ -1720,7 +1720,7 @@ term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom" # ["top", "bottom"]
-lang = ""
+lang = "en"
 lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
