@@ -11,7 +11,7 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = "stinLab"
+title = "stinWeb"
 # Hostname (and path) to the root
 baseURL = "http://localhost:1313"
 # theme list
@@ -19,11 +19,23 @@ baseURL = "http://localhost:1313"
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
+#languageCode = "en", "zh-CN"
 # language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
+#languageName = "English", "简体中文"
+
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 1
+
+  [languages.zh]
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    weight = 2
+
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
+hasCJKLanguage = true
 # copyright description used only for seo schema
 copyright = ""
 # whether to use robots.txt
@@ -35,7 +47,7 @@ enableEmoji = true
 # the main sections of a site
 # if set, the MainSections method on the Site object returns the given sections,
 # otherwise it returns the section with the most pages.
-# mainSections = ["posts"]
+mainSections = ["posts"]
 
 # -------------------------------------------------------------------------------------
 # Front Matter Configuration
@@ -67,46 +79,70 @@ quality = 75
 
 [menus]
 
-[[menus.main]]
-identifier = "archives"
-parent = ""
+# [[menus.main]]
+# identifier = "archives"
+# parent = ""
 # you can add extra information before the name (HTML format is supported), such as icons
-pre = ""
+# pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
-post = ""
-name = "Archives"
-url = "/archives/"
+# post = ""
+# name = "Archives"
+# url = "/archives/"
 # title will be shown when you hover on this menu link
-title = ""
-weight = 1
+# title = ""
+# weight = 1
 
 # FixIt 0.2.14 | NEW add user-defined content to menu items
-[menus.main.params]
+# [menus.main.params]
 # add css class to a specific menu item
-class = ""
+# class = ""
 # whether set as a draft menu item whose function is similar to a draft post/page
-draft = false
+# draft = false
 # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-icon = "fa-solid fa-archive"
+# icon = "fa-solid fa-archive"
 # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
-type = ""
+# type = ""
 # FixIt 0.3.9 | NEW whether to show the submenu item divider line
-divided = false
+# divided = false
 
-[[menus.main]]
-identifier = "categories"
-parent = ""
-pre = ""
-post = ""
-name = "Categories"
-url = "/categories/"
-title = ""
+# [[menus.main]]
+# identifier = "categories"
+# parent = ""
+# pre = ""
+# post = ""
+# name = "Categories"
+# url = "/categories/"
+# title = ""
+# weight = 2
+
+[[languages.en.menus.main]]
+identifier = "tech"
+name = "Tech"
+url = "/tech/"
 weight = 2
 
-[menus.main.params]
-icon = "fa-solid fa-folder-tree"
+[languages.en.menus.main.params]
+icon = "fa-solid fa-laptop-code"
 
-[[menus.main]]
+[[languages.en.menus.main]]
+identifier = "travel"
+name = "Travel"
+url = "/travel/"
+weight = 3
+
+[languages.en.menus.main.params]
+icon = "fa-solid fa-plane"
+
+[[languages.en.menus.main]]
+identifier = "finance"
+name = "Finance"
+url = "/finance/"
+weight = 3
+
+[languages.en.menus.main.params]
+icon = "fa-solid fa-coins"
+
+[[languages.en.menus.main]]
 identifier = "tags"
 parent = ""
 pre = ""
@@ -114,9 +150,51 @@ post = ""
 name = "Tags"
 url = "/tags/"
 title = ""
+weight = 4
+
+[languages.en.menus.main.params]
+icon = "fa-solid fa-tags"
+
+# Chinese Menu
+
+[[languages.zh.menus.main]]
+identifier = "Tech"
+name = "科技"
+url = "/tech/"
+weight = 2
+
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-laptop-code"
+
+[[languages.zh.menus.main]]
+identifier = "Travel"
+name = "旅行"
+url = "/travel/"
 weight = 3
 
-[menus.main.params]
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-plane"
+
+[[languages.zh.menus.main]]
+identifier = "Finance"
+name = "理财"
+url = "/finance/"
+weight = 3
+
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-coins"
+
+[[languages.zh.menus.main]]
+identifier = "tags"
+parent = ""
+pre = ""
+post = ""
+name = "标签"
+url = "/tags/"
+title = ""
+weight = 4
+
+[languages.zh.menus.main.params]
 icon = "fa-solid fa-tags"
 
 # -------------------------------------------------------------------------------------
@@ -182,6 +260,10 @@ min = "0.156.0"
 
 [markup]
 _merge = "shallow"
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 4
 
 # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
 [markup.highlight]
@@ -697,15 +779,27 @@ avatarURL = ""
 # FixIt 0.2.17 | NEW identifier of avatar menu link
 avatarMenu = ""
 # title shown in home page (HTML format is supported)
-title = "stinLab"
+title = "stinWeb"
 # subtitle shown in home page (HTML format is supported)
-subtitle = "This site is dedicated to teaching non-technical users on all stuff technical."
+subtitle = "This site summaries everything I've ever researched into one article."
 # whether to use typeit animation for subtitle
 typeit = true
 # whether to show social links
 social = true
 # disclaimer (HTML format is supported)
 disclaimer = "All guide are based on personal experience."
+
+[languages.zh.params.home.profile]
+enable = true
+onlyFirstPage = false
+gravatarEmail = ""
+avatarURL = ""
+avatarMenu = ""
+title = "stin网"
+subtitle = "stin网的目的是把我个人研究的东西统计在一个文章，方便他人参考。"
+typeit = true
+social = true
+disclaimer = "本站内容都是来自于个人经验"
 
 # Home page posts
 [params.home.posts]
@@ -958,8 +1052,8 @@ id = ""
 
 # FixIt 0.3.16 | NEW Umami Analytics
 [params.analytics.umami]
-data_website_id = ""
-src = ""
+data_website_id = "7690492e-1609-4243-99e6-e6e84ca7f9d0"
+src = "https://cloud.umami.is/script.js"
 data_host_url = ""
 data_domains = ""
 
@@ -1030,7 +1124,7 @@ scrollpercent = false
 
 # FixIt 0.2.16 | NEW Reading progress bar
 [params.readingProgress]
-enable = false
+enable = true
 # Available values: ["left", "right"]
 start = "left"
 # Available values: ["top", "bottom"]

@@ -1,14 +1,18 @@
 ---
-title: Reduce your game size for free using CompactGUI
+title: CompactGUI游戏压缩指南
 description: "No more space for a new 100gb game? Reduce your game size with CompactGUI, a free and open-sourced tool."
 tags:
   - Utility
 date: 2026-04-20T14:19:51.000Z
 draft: true
 categories:
-  - Guide
+  - Tech
 slug: 0fa8178
-author: "{name: Austin Tan Yong Hiok, link: null, email: null, avatar: null}"
+author: 
+  name: Austin Tan Yong Hiok
+  link: null
+  email: null
+  avatar: null
 weight: 0
 lastmod: 2026-04-25T10:36:19.631857Z
 comment: true
@@ -19,7 +23,8 @@ hiddenFromFeed: false
 repost:
   enable: false
   url:
-
+featuredImage: CompactGUI_UI.png
+featuredImagePreview: CompactGUI_UI.png 
 ---
 
 

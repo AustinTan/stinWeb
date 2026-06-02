@@ -7,16 +7,16 @@ draft: true
 author:
   name: Austin Tan Yong Hiok
   link:
-  email: austintanyonghiok@gmail.com
+  email: null
   avatar:
-description: "Short and brief description"
+description: "A low-cost safe and private alternative to VPN."
 keywords:
 comment: true
 weight: 0
 tags:
   - Utility
 categories:
-  - Guide
+  - Tech
 hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRelated: false
