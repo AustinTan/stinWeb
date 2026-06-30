@@ -118,7 +118,7 @@ quality = 75
 [[languages.en.menus.main]]
 identifier = "tech"
 name = "Tech"
-url = "/tech/"
+url = "categories/tech/"
 weight = 2
 
 [languages.en.menus.main.params]
@@ -127,7 +127,7 @@ icon = "fa-solid fa-laptop-code"
 [[languages.en.menus.main]]
 identifier = "travel"
 name = "Travel"
-url = "/travel/"
+url = "categories/travel/"
 weight = 3
 
 [languages.en.menus.main.params]
@@ -136,7 +136,7 @@ icon = "fa-solid fa-plane"
 [[languages.en.menus.main]]
 identifier = "finance"
 name = "Finance"
-url = "/finance/"
+url = "categories/finance/"
 weight = 3
 
 [languages.en.menus.main.params]
@@ -873,7 +873,7 @@ Matrix = ""
 Bilibili = ""
 ORCID = ""
 Liberapay = ""
-Ko-Fi = "https://ko-fi.com/stinweb/tiers"
+Ko-Fi = "stinweb"
 BuyMeaCoffee = ""
 Linktree = ""
 QQ = ""
