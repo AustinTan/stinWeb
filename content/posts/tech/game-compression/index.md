@@ -15,8 +15,8 @@ categories:
 slug: reduce-your-game-size-for-free-using-compactgui
 author: 
   name: Austin Tan Yong Hiok
-  link: null
-  email: null
+  link: https://stinweb.com
+  email: austin@stinweb.com
   avatar: null
 weight: 0
 lastmod: 2026-06-02T10:36:19.631857Z
@@ -34,20 +34,25 @@ featuredImagePreview:
 
 
 <!--more-->
-## Problem it can also solve
-- How to make ARK: Survival Evolved take up less space?
-
 ## Prerequisite
-- OS: Windows 10 and above
-- Can only be used on game without ***DirectStorage API***
-- Internet connection ???
+>[!Attention]+
+> -   OS: Windows 10 and above
+> - Can only be used on game without ***DirectStorage API***
 
 ## What does it do?
 It reduce file sizes of game with negligible performance impact using a Windows 10 feature (compact.exe).
 
 ### Example:
-- ARK: Survival Evolved
-259GB > 94.7GB (Size reduced by **63%**)
+|Game|Original Size|Compressed Size|Saved Size|Mode|
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|Train Simulator Classic 2024|215GB|107GB|108GB / 50%|XPRESS4K|
+|ARK: Survival Evolved|278GB|147GB|130GB / 47%|XPRESS4K|
+|Assetto Corsa|189GB|71GB|118GB / 62%|LZX|
+|ATLAS|136GB|78GB|58GB / 43%|XPRESS4K|
+|God of War Ragnarök|174GB|134GB|41GB / 23%|XPRESS16K|
+|Killing Floor 2|95GB|47GB|48GB / 51%|LZX|
+
+Data is gathered from CompactUI's [database](https://github.com/IridiumIO/CompactGUI/blob/database/database.json).
 
 ## Installation
 
@@ -90,3 +95,5 @@ Another feature is its database, everytime you compressed a steam game. It will 
 Adding a folder in the watcher lists means that the game will be re-compressed automatically after game updates. However, for this feature to be active `CompactGUI.exe` need to be running in the background.
 
 ![CompactGUI Watcher](CompactGUI-watcher.webp)
+
+## Technical Explaination
